@@ -4,7 +4,7 @@ from flask import Flask
 import ghhops_server as hs
 import rhino3dm
 
-import pymaxwell5 as pym
+import _pymaxwell5 as pym
 
 app = Flask(__name__) #flask
 hops = hs.Hops(app) #flask
