@@ -4,7 +4,7 @@ from flask import Flask
 import ghhops_server as hs
 import rhino3dm
 
-from pymaxwell5 import *
+import pymaxwell5 as pym
 
 app = Flask(__name__) #flask
 hops = hs.Hops(app) #flask
@@ -51,7 +51,7 @@ def run_maxwell_render(width,height,time,sl,img,mxi,inPath, outFolder):
     # parameters.append('-nowait')
     parameters.append('-nomxi:off')
     parameters.append('-noimage:off')
-    runMaxwell(parameters)
+    pym.runMaxwell(parameters)
     return outFolder+img
 
 if __name__ == "__main__":
