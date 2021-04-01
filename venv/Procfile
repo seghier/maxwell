@@ -1,1 +1,2 @@
 worker: python maxwell.py
+ps:scale web=1
